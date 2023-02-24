@@ -14,9 +14,9 @@ __________
 시계열의 주요 번동 4 가지
 
 랜덤(무작위), 계절, 추세, 계절추세(복합) 변동
-
+<div align="center">
 <img src = "https://user-images.githubusercontent.com/121419113/220830229-db1df6eb-9c85-4a4e-8e81-5520e3d79225.png" width="700" height="500"/>
-
+</div>
 시계열 다루기
 
 - 차분: 직전의 값과의 차이를 구하여 장기적인 추세를 제거하고 "정상화"시킬 때 쓴다. 계절성을 제거할 때는 1년 단위로 차분하는 계절 차분이라고도 한다. (and 역차분, 윈도잉, 합/교집합 등 코드 참조)
@@ -42,7 +42,7 @@ __________
 *강정상성: 어떤 시점들간의 결합분포가 모두 동일하다.
 
 *약정상성: 1. 어떤 시점에서든 기댓값이 같고 2. 분산이 무한대로 팽창하지 않으며 3. 시점간 공분산이 "시차"에만 의존한다. (약정상성만 충족시켜도 정상성을 가진다고 판단하는게 일반적이다.)
-
+<div align="center">
 <img src = "https://assaeunji.github.io/images/stationarity-stochasticprocess.png" width="500" height="300"/>
-
+<div>
 

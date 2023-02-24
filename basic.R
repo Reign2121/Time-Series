@@ -107,7 +107,7 @@ aggregate(prod1,
 
 ###################
 
-##EDA
+##기본적인 분석
 
 ###################
 
@@ -139,7 +139,7 @@ ma3 = filter(airpass, filter=rep(1, 4)/4 #평활상수
 ma3
 plot(ma3)
 
-#이중이동평균법
+#이중이동평균법 (이동평균을 두번 냄)
 ma1
 ma4 = filter(ma1, filter=rep(1, 3)/3, method="convolution" #이동평균
              ,sides=1 #과거값만 보겠다. 필터링의 사상

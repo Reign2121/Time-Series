@@ -1,9 +1,7 @@
 # Time-series
 A collection of time series analysis exercises
 
-1. 시계열의 기본 개념들
-
-__________
+## <b>1. 시계열의 기본 개념들</b>
 
 시계열 자료: 어떠한 대상을 여러 시점에서 관찰한 일련의 기록, 종단 자료
 
@@ -29,7 +27,7 @@ __________
 
 __________
 
-2. 모델링
+## <b>2. 모델링 </b>
 
 조건: Stationary process
 

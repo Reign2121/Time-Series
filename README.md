@@ -15,7 +15,7 @@ __________
 
 랜덤(무작위), 계절, 추세, 계절추세(복합) 변동
 
-![image](https://user-images.githubusercontent.com/121419113/220830229-db1df6eb-9c85-4a4e-8e81-5520e3d79225.png)
+<img src = "https://user-images.githubusercontent.com/121419113/220830229-db1df6eb-9c85-4a4e-8e81-5520e3d79225.png" width="700" height="500"/>
 
 시계열 다루기
 

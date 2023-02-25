@@ -1,6 +1,8 @@
 # Time-series
 A collection of time series analysis exercises
 
+시계열 분석관련 강의들을 듣고 배운 내용을 정리해둔 곳입니다.
+
 ## <b>1. 시계열의 기본 개념들</b>
 
 시계열 자료: 어떠한 대상을 여러 시점에서 관찰한 일련의 기록, 종단 자료
@@ -25,7 +27,8 @@ A collection of time series analysis exercises
 
 - 요소분해(decomposing): 어떠한 시계열을 랜덤, 계절, 추세 변동으로 분해한다. 이 때 중요한 것은 랜덤변동이 어떠한 다른 변동이 없는 "정상시계열"을 만족해야 한다는 것이다.
 
-__________
+
+
 
 ## <b>2. 모델링 </b>
 
@@ -42,5 +45,60 @@ __________
 *약정상성: 1. 어떤 시점에서든 기댓값이 같고 2. 분산이 무한대로 팽창하지 않으며 3. 시점간 공분산이 "시차"에만 의존한다. (약정상성만 충족시켜도 정상성을 가진다고 판단하는게 일반적이다.)
 <div align="center">
 <img src = "https://assaeunji.github.io/images/stationarity-stochasticprocess.png" width="500" height="300"/>
-<div>
+</div>
 
+
+<br><br>시계열 데이터의 필수 모델링 과정: 정상성 체크 -> 정상성 처리(비정상 시계열인 경우) -> 정상성 검증(Test) 
+</br></br>
+
+## <b> 2-1. 단변량 시계열 </b>
+<br>
+>> Case 1) 정상시계열일 때
+</br>
+
+<br>- AR model
+
+자기자신의 과거 값으로 선형 결합하여 변동을 설명하고 관심 있는 변수를 예측한다.
+
+AR(p) : p차 자기회귀 모형
+
+y_t = c + Φ1 * y_t-1 + Φ2 * y_t-2 + ... + Φp * y_t-p + ε_t *ε_t는 잔차이자 백색소음
+</br>
+<br>
+- MA model
+
+평활화(smoothing) 기법을 적용한 모델로, 정상시계열인 백색소음을 평활화하여 남아있는 변동을 설명한다.
+
+MA(q) : q차 이동평균 모형
+
+y_t = c + Θ1 * ε_t-1 + Θ2 * ε_t-2 + ... + Θq * ε_t-q + ε_t
+</br>
+<br>
+- ARMA
+
+AR + MA
+
+p개의 자기 자신의 과거값과 q개의 과거 백색 잡음의 선형 결합
+</br>
+
+<br>
+>> Case 2) 비정상시계열일 때
+</br>
+<br>
+- ARIMA
+
+ARMA모델에 차분의 개념이 포함된 모델. 즉, 비정상시계열을 먼저 정상시계열로 바꾼 뒤 AR과 MA 모델을 결합한다.
+
+ARIMA(p, d, q) : d차 차분한 데이터에 AR(p) 모형과 MA(q) 모형을 합친 모형
+</br>
+
+<br>
+>> ACF , PACF
+</br>
+<br><div align="center">
+<img src = "https://user-images.githubusercontent.com/121419113/221362223-05284cac-847a-49bf-a0bc-f22e23dc3c05.png" width="800" height="200"/>
+
+출처) 패스트캠퍼스
+</br></div>
+
+ACF에서 q결정(MA모델의 자기상관이 최소화되는 지점), PACF에서 p결정(AR모델의 자기상관이 최소화되는 지점)

@@ -105,10 +105,11 @@ __________
 </br>
 <br><div align="center">
 <img src = "https://user-images.githubusercontent.com/121419113/221362223-05284cac-847a-49bf-a0bc-f22e23dc3c05.png" width="800" height="200"/>
-
+<br>
 출처) 패스트캠퍼스
-</br></div>
+</br></br></div>
 
 ACF에서 q결정(MA모델의 자기상관이 최소화되는 지점), PACF에서 p결정(AR모델의 자기상관이 최소화되는 지점)
-
+<br><br>
 ## <b> 2-2. 다변량 시계열 </b>
+</br></br>

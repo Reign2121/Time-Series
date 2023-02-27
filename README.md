@@ -56,11 +56,13 @@ A collection of time series analysis exercises
 >> Case 1) 정상시계열일 때
 </br>
 
-<br>- AR model
+<br>
+
+- AR model
 
 자기자신의 과거 값으로 선형 결합하여 변동을 설명하고 관심 있는 변수를 예측한다.
 
-AR(p) : p차 자기회귀 모형
+AR(p): p차 자기회귀 모형
 
 y_t = c + Φ1 * y_t-1 + Φ2 * y_t-2 + ... + Φp * y_t-p + ε_t *ε_t는 잔차이자 백색소음
 </br>
@@ -74,23 +76,29 @@ MA(q) : q차 이동평균 모형
 y_t = c + Θ1 * ε_t-1 + Θ2 * ε_t-2 + ... + Θq * ε_t-q + ε_t
 </br>
 <br>
-- ARMA
+- ARMA model
 
 AR + MA
 
 p개의 자기 자신의 과거값과 q개의 과거 백색 잡음의 선형 결합
 </br>
 
+__________
+
 <br>
 >> Case 2) 비정상시계열일 때
 </br>
 <br>
-- ARIMA
+
+- ARIMA model
 
 ARMA모델에 차분의 개념이 포함된 모델. 즉, 비정상시계열을 먼저 정상시계열로 바꾼 뒤 AR과 MA 모델을 결합한다.
 
 ARIMA(p, d, q) : d차 차분한 데이터에 AR(p) 모형과 MA(q) 모형을 합친 모형
+
 </br>
+
+__________
 
 <br>
 >> ACF , PACF
@@ -102,3 +110,5 @@ ARIMA(p, d, q) : d차 차분한 데이터에 AR(p) 모형과 MA(q) 모형을 합
 </br></div>
 
 ACF에서 q결정(MA모델의 자기상관이 최소화되는 지점), PACF에서 p결정(AR모델의 자기상관이 최소화되는 지점)
+
+## <b> 2-2. 다변량 시계열 </b>

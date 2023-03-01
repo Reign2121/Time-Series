@@ -48,7 +48,7 @@ A collection of time series analysis exercises
 </div>
 
 
-<br><br>시계열 데이터의 필수 모델링 과정: 정상성 체크 -> 정상성 처리(비정상 시계열인 경우) -> 정상성 검증(Test) 
+<br><br>시계열 데이터의 필수 모델링 과정: 정상성 체크 -> 정상성 처리(비정상 시계열인 경우) -> 정상성 검증(Test), 보통 ADF test를 진행한다. (H0: 비정상시계열이다.)
 </br></br>
 
 ## <b> 2-1. 단변량 시계열 </b>

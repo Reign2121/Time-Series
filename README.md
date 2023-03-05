@@ -144,19 +144,36 @@ x 의 값을 알고 있을 때 이에 대한 조건부확률분포 p(y|x)의 분
 예측문제의 관점으로 보면 조건부분산은 예측의 불확실성를 의미하기도 한다.
 <br>
 <div align="center">
-ARCH
-<img src = "![image](https://user-images.githubusercontent.com/121419113/222966546-2adb78fd-1018-4383-9f28-762437fe3798.png)" width="500" height="500"/>
+<br>
+ARCH(q)
+</br>
+<img src = "https://user-images.githubusercontent.com/121419113/222966546-2adb78fd-1018-4383-9f28-762437fe3798.png" width="300" height="150"/>
 </div>
 </br>
 
 <br>
 <div align="center">
-GARCH
-<img src = "![image](https://user-images.githubusercontent.com/121419113/222966601-bfd5b3da-f1c9-4ddc-98eb-ce0bd9fd450b.png)" width="500" height="500"/>
+<br>
+GARCH(p,q)
+</br>  
+<img src = "https://user-images.githubusercontent.com/121419113/222966652-38ad1539-9e4c-4774-97c0-531ce7bab448.png" width="300" height="150"/>
 </div>
 </br>
 
+GARCH 모델은 ARCH 모델을 Generalized한 모델이다. 
+
+ARCH는 그 계수인 q에 따라 모형이 매우 복잡해지고 성능 또한 오르지 않는 문제가 빈번히 발생한다.(어느정도 시점까지의 변동을 이용하여 예측할 것인가)
+
+GARCH모델은 ARCH를 일반화하여 추정해야할 모수를 줄이고, 분산이 자체 시차값(lagged values)에 의존하도록 하여 더욱 효과/효율적인 분석을 가능하게 한다.
+
 ## <b>3. 딥러닝과 시계열</b>
 
+time-series or ordered task에서 딥러닝이 가지는 장점
 
+1. 매우 긴 t시점에 적합하다. (arima는 정상성 등의 제약 때문에 긴 변동을 설명하기에는 무리가 있다.)
 
+2. 다변량 X, 다변량 Y 문제에 적용이 가능하다.
+
+3. 순환, "기억(Memory)"의 개념이 적용된다. (즉, 자기상관을 그대로 받아 모델링한다.)
+
+4. 수치, 숫자 뿐만 아니라 영상, 문자, 행동기록(로그) 등 비정형 데이터를 다룰 수 있다. 

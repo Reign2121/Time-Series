@@ -144,7 +144,15 @@ x 의 값을 알고 있을 때 이에 대한 조건부확률분포 p(y|x)의 분
 예측문제의 관점으로 보면 조건부분산은 예측의 불확실성를 의미하기도 한다.
 <br>
 <div align="center">
-<img src = "https://user-images.githubusercontent.com/121419113/222965771-f6e07c83-0c36-4223-985a-fc1e90b6137a.png" width="500" height="500"/>
+ARCH
+<img src = "![image](https://user-images.githubusercontent.com/121419113/222966546-2adb78fd-1018-4383-9f28-762437fe3798.png)" width="500" height="500"/>
+</div>
+</br>
+
+<br>
+<div align="center">
+GARCH
+<img src = "![image](https://user-images.githubusercontent.com/121419113/222966601-bfd5b3da-f1c9-4ddc-98eb-ce0bd9fd450b.png)" width="500" height="500"/>
 </div>
 </br>
 

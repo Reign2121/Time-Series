@@ -125,6 +125,7 @@ ACF에서 q결정(MA모델의 자기상관이 최소화되는 지점), PACF에�
 
 단일 시계열 AR과 다른 점은 설명변수로 자기 자신의 lag뿐 아니라 다른 변수들의 lag도 포함한다는 것이다.
 </br>
+__________
 <br>
 2. 변동성 모형 (ARCH, GARCH)
 
@@ -146,4 +147,8 @@ x 의 값을 알고 있을 때 이에 대한 조건부확률분포 p(y|x)의 분
 <img src = "https://user-images.githubusercontent.com/121419113/222965771-f6e07c83-0c36-4223-985a-fc1e90b6137a.png" width="500" height="500"/>
 </div>
 </br>
+
+## <b>3. 딥러닝과 시계열</b>
+
+
 

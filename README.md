@@ -180,5 +180,5 @@ __________
 
 - RNN
 
-- LSTM
+- LSTM with gate
 

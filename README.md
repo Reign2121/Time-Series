@@ -182,7 +182,10 @@ __________
 
 바닐라, 즉, 기본 RNN 모델은 딥러닝에 Recurrent한 구조를 접목한 모델로 sequential한 데이터를 다루는 데 이용된다.
 
-
+그러나, 이는 학습이 점차 장기적으로 이어질 떄 기울기 소멸 혹은 폭주의 문제로 temporal한 dependency를 파악하는 데 한계가 있다. 
 
 - LSTM
 
+LSTM은 RNN 구조에 내부의 cell state와 4개의 gate를 두어 정보를 효과적으로 처리한다.
+
+LSTM은 vanilla RNN의 장기 의존성 문제를 해결하였다.

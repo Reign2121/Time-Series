@@ -178,7 +178,11 @@ time-series or ordered task에서 딥러닝이 가지는 장점
 4. 수치, 숫자 뿐만 아니라 영상, 문자, 행동기록(로그) 등 비정형 데이터를 다룰 수 있다. 
 __________
 
-- RNN
+- Vanilla RNN
 
-- LSTM with gate
+바닐라, 즉, 기본 RNN 모델은 딥러닝에 Recurrent한 구조를 접목한 모델로 sequential한 데이터를 다루는 데 이용된다.
+
+
+
+- LSTM
 

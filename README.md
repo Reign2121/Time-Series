@@ -189,3 +189,5 @@ __________
 LSTM은 RNN 구조에 내부의 cell state와 4개의 gate를 두어 정보를 효과적으로 처리한다.
 
 LSTM은 vanilla RNN의 장기 의존성 문제를 해결하였다.
+
+[From RNN To LSTM](https://seollane22.tistory.com/24)

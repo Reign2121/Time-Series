@@ -53,7 +53,7 @@ A collection of time series analysis exercises
 
 ## <b> 2-1. 단변량 시계열 </b>
 <br>
->> Case 1) 정상시계열일 때
+>> Case 1) 정상 시계열
 </br>
 
 <br>
@@ -86,7 +86,7 @@ p개의 자기 자신의 과거값과 q개의 과거 백색 잡음의 선형 결
 __________
 
 <br>
->> Case 2) 비정상시계열일 때
+>> Case 2) 비정상 시계열
 </br>
 <br>
 

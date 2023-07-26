@@ -1,0 +1,9 @@
+#time_stmap
+train_data['season'] = train_data['timestamp'].dt.month.apply(lambda x: 0 if x in [12, 1, 2] else
+                                       (1 if x in [3, 4, 5] else
+                                       (2 if x in [6, 7, 8] else 3))) #주기 있음
+train_data['month'] = train_data['timestamp'].dt.month
+train_data['week'] = train_data['timestamp'].dt.week
+train_data['day'] = train_data['timestamp'].dt.weekday #주기 있음
+train_data['weekend'] = train_data['timestamp'].dt.weekday.apply(lambda x: 1 if x in [5,6] else 0) #주기 있음
+train_data['hour'] = train_data['timestamp'].dt.hour #주기 있음

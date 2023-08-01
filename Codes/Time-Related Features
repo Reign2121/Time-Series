@@ -8,7 +8,9 @@ train_data['day'] = train_data['timestamp'].dt.weekday #주기 있음
 train_data['weekend'] = train_data['timestamp'].dt.weekday.apply(lambda x: 1 if x in [5,6] else 0) #주기 있음
 train_data['hour'] = train_data['timestamp'].dt.hour #주기 있음
 
+
 #주기성 모델링
+
 features_cyc = {'season' : 4,'day' : 7, 'weekend' : 2, 'hour' : 24}
 for feature in features_cyc.keys():
   train_data[feature+'_cos'] = np.cos((2*np.pi*train_data[feature])/features_cyc[feature])

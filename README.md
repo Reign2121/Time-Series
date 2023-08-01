@@ -1,7 +1,7 @@
 # Time-Series
 A collection of time series analysis exercises
 
-그동안 배운 시계열 분석관련 내용을 정리/요약해둔 곳입니다.
+그동안 익힌 시계열 분석관련 내용을 정리/요약해둔 곳입니다.
 
 ## <b>1. 시계열의 기본 개념들</b>
 
